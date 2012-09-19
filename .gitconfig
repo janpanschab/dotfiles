@@ -1,9 +1,11 @@
 [alias]
 	c = commit -am
-	up = pull
+	pr = pull --rebase
 	p = push
 	s = status -s
 	df = diff --color --color-words --abbrev
+	ds = diff --stat
+	dc = diff --cached
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [color]
 	ui = always
@@ -43,5 +45,5 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:paulirish/"]
-  insteadOf = "git://github.com/paulirish/"
+[url "git@github.com:janpanschab/"]
+  insteadOf = "git://github.com/janpanschab/"

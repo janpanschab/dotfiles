@@ -3,11 +3,11 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
+#alias ~="cd ~" # `cd` is probably faster to type though
+#alias -- -="cd -"
 
 # programs
-alias slt='open -a "Sublime Text 2"'
+alias subl='open -a "Sublime Text 2"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
@@ -16,8 +16,8 @@ alias slt='open -a "Sublime Text 2"'
 alias please=sudo
 
 # handy things
-alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
+#alias bunyip='node ~/code/bunyip/cli.js'
+#alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
 
 
 # Detect which `ls` flavor is in use
