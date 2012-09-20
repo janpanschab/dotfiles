@@ -11,6 +11,10 @@ alias subl='open -a "Sublime Text 2"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
+# safe file operation
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
 
 # be nice
 alias please=sudo
