@@ -1,0 +1,5 @@
+# PATH like a bawss
+PATH=$PATH:/usr/local/lib
+# ...
+
+export PATH

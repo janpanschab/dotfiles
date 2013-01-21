@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 
 # programs
 alias subl='open -a "Sublime Text 2"'
+alias wkhtmltopdf='/Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
@@ -37,7 +38,6 @@ alias l="ls -l ${colorflag}"
 # List all files colorized in long format, including dot files
 alias la="ls -la ${colorflag}"
 
-
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
@@ -54,20 +54,22 @@ fi
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; npm update npm -g; sudo npm update -g; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; sudo npm update npm -g; sudo npm update -g; sudo gem update'
 
 # GIT STUFF
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
-
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
+# Git FTP - `git ftp push`
+alias deploy='git ftp push'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
+alias localip="ipconfig getifaddr en2"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 # Enhanced WHOIS lookups
@@ -122,3 +124,7 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# mount
+alias mountdev="mkdir /Volumes/dev && sshfs jpanschab@10.0.0.8:/data/www /Volumes/dev -o reconnect"
+alias umountdev="umount /Volumes/dev"
