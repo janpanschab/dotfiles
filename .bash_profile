@@ -5,8 +5,14 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
+# init bash completion
+# for file in $(ls -1 /usr/local/etc/bash_completion.d/); do 
+# 	source /usr/local/etc/bash_completion.d/$file;
+# done
+# unset file
+
 # init z   https://github.com/rupa/z
-#. ~/code/z/z.sh
+. ~/code/z/z.sh
 
 # init rvm
 #source ~/.rvm/scripts/rvm

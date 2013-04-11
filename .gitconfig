@@ -29,3 +29,6 @@
 	log = true
 [push]
 	default = current
+[user]
+	name = Jan Panschab
+	email = jan.panschab@gmail.com
