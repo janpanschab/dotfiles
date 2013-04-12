@@ -6,13 +6,10 @@ done
 unset file
 
 # init bash completion
-# for file in $(ls -1 /usr/local/etc/bash_completion.d/); do 
-# 	source /usr/local/etc/bash_completion.d/$file;
-# done
-# unset file
+source /usr/local/etc/bash_completion
 
 # init z   https://github.com/rupa/z
-. ~/code/z/z.sh
+source ~/code/z/z.sh
 
 # init rvm
 #source ~/.rvm/scripts/rvm
