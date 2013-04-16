@@ -10,8 +10,6 @@ alias .....="cd ../../../.."
 # programs
 alias subl='open -a "Sublime Text 2"'
 alias wkhtmltopdf='/Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf'
-# also/or do this:
-# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 # safe file operation
 alias cp='cp -i'
@@ -126,7 +124,3 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
-# mount
-alias mountdev="mkdir /Volumes/dev && sshfs jpanschab@10.0.0.8:/data/www /Volumes/dev -o reconnect"
-alias umountdev="umount /Volumes/dev"
