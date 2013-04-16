@@ -5,11 +5,13 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
+# init z https://github.com/rupa/z
+source ~/code/z/z.sh
+
 # init bash completion
 source /usr/local/etc/bash_completion
-
-# init z   https://github.com/rupa/z
-source ~/code/z/z.sh
+# Autocomplete Grunt commands
+which grunt > /dev/null && eval "$(grunt --completion=bash)"
 
 # init rvm
 #source ~/.rvm/scripts/rvm
