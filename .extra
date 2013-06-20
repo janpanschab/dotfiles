@@ -1,4 +1,5 @@
 # PATH like a bawss
+PATH=/usr/local/bin:$PATH 
 PATH=$PATH:/usr/local/lib
 # ...
 

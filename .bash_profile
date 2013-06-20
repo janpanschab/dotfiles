@@ -6,7 +6,7 @@ done
 unset file
 
 # init z https://github.com/rupa/z
-source ~/code/z/z.sh
+source /etc/local/etc/profile.d/z.sh
 
 # init bash completion
 source /usr/local/etc/bash_completion
