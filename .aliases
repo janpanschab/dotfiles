@@ -22,6 +22,7 @@ alias mv='mv -i'
 # be nice
 alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias vhosts='sudo $EDITOR /etc/apache2/extra/httpd-vhosts.conf'
 
 # handy things
 #alias bunyip='node ~/code/bunyip/cli.js'
