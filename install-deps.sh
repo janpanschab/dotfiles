@@ -7,30 +7,28 @@
 
 # https://rvm.io
 # rvm for the rubiess
-curl -L https://get.rvm.io | bash -s stable --ruby
+# curl -L https://get.rvm.io | bash -s stable --ruby
 
 # https://github.com/isaacs/nave
 # needs npm, obviously.
 # TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-npm install -g nave
+# npm install -g nave
 
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 
 
 # https://github.com/rupa/z
 # z, oh how i love you
-mkdir -p ~/code/z
-curl https://raw.github.com/rupa/z/master/z.sh > ~/code/z/z.sh
+cd ~/code
+git clone https://github.com/rupa/z.git
 chmod +x ~/code/z/z.sh
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
-
-# add this to the bash_profile file if it aint there.
-#   . ~/code/z/z.sh
+# z binary is already referenced from .bash_profile
 
 
 # now you can record photobooth videos quickly and they upload to dropbox DURING RECORDING

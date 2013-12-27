@@ -9,10 +9,6 @@ alias .....="cd ../../../.."
 
 # programs
 alias subl='open -a "Sublime Text 2"'
-alias wkhtmltopdf='/Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf'
-
-# grunt
-alias init='./init.sh'
 
 # safe file operation
 alias cp='cp -i'
