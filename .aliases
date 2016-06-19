@@ -8,7 +8,8 @@ alias .....="cd ../../../.."
 #alias -- -="cd -"
 
 # programs
-alias subl='open -a "Sublime Text 2"'
+alias subl='open -a "Sublime Text"'
+alias x="z"
 
 # safe file operation
 alias cp='cp -i'
