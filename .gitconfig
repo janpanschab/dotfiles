@@ -1,7 +1,7 @@
 [alias]
 	c = commit -am
 	pre = pull --rebase
-	p = push
+	p = push -u
 	s = status -s -b
 	df = diff --color --color-words --abbrev
 	ds = diff --stat
