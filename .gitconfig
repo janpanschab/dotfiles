@@ -10,6 +10,7 @@
 	us = submodule foreach git pull origin master
 	ch = checkout
 	m = checkout master
+	mm = merge master
 [color]
 	ui = always
 [core]
