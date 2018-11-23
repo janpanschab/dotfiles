@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 #alias -- -="cd -"
 
 # programs
-alias subl='open -a "Sublime Text"'
+alias code='open -a "Visual Studio Code"'
 alias x="z"
 
 # safe file operation
