@@ -13,7 +13,7 @@
 	ch = checkout
 	m = checkout master
 	mm = merge master
-	r = rebase master
+	rem = rebase master
 	ri = rebase -i master
 [color]
 	ui = always
