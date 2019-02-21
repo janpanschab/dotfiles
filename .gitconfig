@@ -16,6 +16,7 @@
 	ri = rebase -i master
 	rc = rebase --continue
 	ra = rebase --abort
+	fp = fetch -p
 [color]
 	ui = always
 [core]
