@@ -17,6 +17,7 @@
 	rc = rebase --continue
 	ra = rebase --abort
 	fp = fetch -p
+	forcepush = push --force-with-lease
 [color]
 	ui = always
 [core]
