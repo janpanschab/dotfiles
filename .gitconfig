@@ -18,6 +18,8 @@
 	ra = rebase --abort
 	fp = fetch -p
 	forcepush = push --force-with-lease
+	b = branch
+	bm = branch --merged
 [color]
 	ui = always
 [core]
