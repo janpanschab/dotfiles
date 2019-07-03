@@ -11,18 +11,9 @@ source ~/z/z.sh
 
 # init bash completion
 source /usr/local/etc/bash_completion
-# Autocomplete Grunt commands
-which grunt > /dev/null && eval "$(grunt --completion=bash)"
-
-# init rvm
-#source ~/.rvm/scripts/rvm
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
-
-# Prefer US English and use UTF-8
-#export LC_ALL="en_US.UTF-8"
-#export LANG="en_US"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
