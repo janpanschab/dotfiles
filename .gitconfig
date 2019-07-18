@@ -7,7 +7,7 @@
 	df = diff --color --color-words --abbrev
 	ds = diff --stat
 	dc = diff --cached
-	lg = log --all --decorate --oneline --graph
+	lg = log --all --decorate --oneline --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	us = submodule foreach git pull origin master
 	ch = checkout
 	m = checkout master
